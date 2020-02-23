@@ -49,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void composeEmail( String text) {
-        String[] addresses={"smitshrestha101@outlook.com"};
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, "Android");
         intent.putExtra(Intent.EXTRA_TEXT, text);
         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -67,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-    
+
 
     public void increment(View view){
         if (quantity<100){

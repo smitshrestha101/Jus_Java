@@ -22,12 +22,10 @@
             android:inputType="textCapWords"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="toppings"
-            android:textAllCaps="true" />
+            android:text="@string/toppings"
+            style="@style/HeaderTextStyle"/>
 
         <CheckBox
             android:id="@+id/checkWhipped"
@@ -45,10 +43,9 @@
             android:text="Chocolate" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/HeaderTextStyle"
             android:text="quantity"
-            android:textAllCaps="true" />
+             />
 
         <LinearLayout
             android:layout_width="wrap_content"
