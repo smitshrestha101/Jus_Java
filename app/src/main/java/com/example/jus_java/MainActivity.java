@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         boolean checkWhip=checkWhippedCream();
         boolean checkChoc=checkChocolate();
 
-        EditText editText=(EditText) findViewById(R.id.name);
+        EditText editText= findViewById(R.id.name);
         String name = editText.getText().toString();
 
         int totPrice=calculatePrice(quantity,checkWhip,checkChoc);
@@ -67,11 +67,7 @@ public class MainActivity extends AppCompatActivity {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
-
-    private void displayMessage(String msg) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(msg);
-    }
+    
 
     public void increment(View view){
         if (quantity<100){
